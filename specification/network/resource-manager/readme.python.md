@@ -34,7 +34,6 @@ batch:
   - tag: package-2019-06
   - tag: package-2019-04
   - tag: package-2019-02
-  - tag: package-2018-12
   - tag: package-2018-11
   - tag: package-2018-10
   - tag: package-2018-08
@@ -228,16 +227,6 @@ Please also specify `--python-sdks-folder=<path to the root directory of your az
 ``` yaml $(tag) == 'package-2019-02'
 namespace: azure.mgmt.network.v2019_02_01
 output-folder: $(python-sdks-folder)/network/azure-mgmt-network/azure/mgmt/network/v2019_02_01
-```
-
-### Tag: package-2018-12 and python
-
-These settings apply only when `--tag=package-2018-12 --python` is specified on the command line.
-Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
-
-``` yaml $(tag) == 'package-2018-12'
-namespace: azure.mgmt.network.v2018_12_01
-output-folder: $(python-sdks-folder)/network/azure-mgmt-network/azure/mgmt/network/v2018_12_01
 ```
 
 ### Tag: package-2018-11 and python
